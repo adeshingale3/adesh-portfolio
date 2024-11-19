@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Calgary';
+  src: url('./fonts/Calgary.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lockedWindow';
+  src: url('./fonts/lockedWindow.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+    color: white;
+    font-family: 'Futura Std', sans-serif;
+}
