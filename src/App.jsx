@@ -57,7 +57,7 @@ const App = () => {
                         {/* Logo */}
                         <img 
                             className='h-[40px] w-[40px] md:h-[60px] md:w-[60px] lg:h-[80px] lg:w-[80px]' 
-                            src="/public/logo.png" 
+                            src="/logo.png" 
                             alt="logo" 
                         />
                         {/* Drop Down Menu */}
