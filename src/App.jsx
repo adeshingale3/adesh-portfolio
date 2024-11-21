@@ -78,7 +78,7 @@ const App = () => {
                         </div>
                     </div>
                     <Canvas 
-                        className='-mt-24 md:-mt-16 lg:-mt-24' 
+                        className='-mt-28 md:-mt-16 lg:-mt-24' 
                         camera={{ fov: 40 }}
                     >
                         <OrbitControls />
