@@ -7,7 +7,7 @@ const Work = () => {
         {
             title: "EcoPlace",
             description: "EcoPlace is a platform that provides real-time sustainability scores for e-commerce products, empowering consumers and businesses to make eco-friendly decisions.",
-            image: "/public/assets/ecoplace.png",
+            image: "/assets/ecoplace.png",
             tags: ["Python", "React.js", "Tailwind CSS", "Firebase", "Node.js"],
             link: "https://github.com/adeshingale3/EcoPlace",
             icon: Brain
@@ -15,7 +15,7 @@ const Work = () => {
         {
             title: "VConnect",
             description: "VConnect is a gamified web platform that connects volunteers with organizers by offering event management tools, a points-based reward system (AURA), and social features to make volunteering engaging and rewarding",
-            image: "/public/assets/vconnect.png",
+            image: "/assets/vconnect.png",
             tags: ["React.js", "Tailwind CSS", "Firebase", "Node.js"],
             link: "https://github.com/adeshingale3/Vconnect",
             icon: Rocket
@@ -23,7 +23,7 @@ const Work = () => {
         {
             title: "Saviour - Disaster Management Application",
             description: "Saviour is a mobile application which gives you all emergency contact number and locations of your nearest disaster management agency at one place. This application makes easy to get help during disaster as fast as one can.",
-            image: "https://source.unsplash.com/random/1200x800?blockchain",
+            image: "#",
             tags: ["Flutter", "Dart", "Firebase", "Open Weather API", "Google Maps API"],
             link: "https://github.com/adeshingale3/disaster-management-flutter-application",
             icon: Code
