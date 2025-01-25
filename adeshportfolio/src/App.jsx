@@ -6,9 +6,11 @@ import Navbar from './components/Navbar';
 import Education from './components/Education';
 import Work from './components/Work';
 import Hero from './components/Hero';
-import ContactPagage from './components/Contact';
+
 import ContactPage from './components/Contact';
 import Skill from './components/Skill';
+import SplashCursor from './blocks/Animations/SplashCursor/SplashCursor';
+
 
 
 
@@ -30,6 +32,7 @@ function App() {
     <>
       {loading && <Loader />}
       <div className="bg-[#0a0a0a] min-h-screen text-white selection:bg-purple-500/30">
+        <SplashCursor/>
         <Navbar />
         <Hero />
         <Work />
