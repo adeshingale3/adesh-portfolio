@@ -10,6 +10,7 @@ const Work = () => {
             image: "/assets/ecoplace.png",
             tags: ["Python", "React.js", "Tailwind CSS", "Firebase", "Node.js"],
             link: "https://github.com/adeshingale3/EcoPlace",
+            live_link: "https://eco-place-cyan.vercel.app/",
             icon: Brain
         },
         {
@@ -18,6 +19,7 @@ const Work = () => {
             image: "/assets/vconnect.png",
             tags: ["React.js", "Tailwind CSS", "Firebase", "Node.js"],
             link: "https://github.com/adeshingale3/Vconnect",
+            live_link: "https://vconnect-ecru.vercel.app/",
             icon: Rocket
         },
         {
@@ -26,6 +28,7 @@ const Work = () => {
             image: "#",
             tags: ["Flutter", "Dart", "Firebase", "Open Weather API", "Google Maps API"],
             link: "https://github.com/adeshingale3/disaster-management-flutter-application",
+            live_link: "#",
             icon: Code
         }
     ];
@@ -86,6 +89,13 @@ const Work = () => {
                                             className="inline-flex items-center text-sm md:text-base text-purple-400 hover:text-purple-300 gap-2"
                                         >
                                             View Project <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
+                                        </motion.a>
+                                        <motion.a
+                                            href={project.live_link}
+                                            whileHover={{ x: 10 }}
+                                            className="inline-flex items-center text-sm md:text-base ml-4 text-purple-400 hover:text-purple-300 gap-2"
+                                        >
+                                            Live <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
                                         </motion.a>
                                     </div>
                                     <div className="w-full md:w-1/2">
