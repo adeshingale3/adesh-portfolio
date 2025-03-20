@@ -66,7 +66,7 @@ const Navbar = () => {
                             className="text-white font-bold text-xl flex items-center gap-2"
                             whileHover={{ scale: 1.05 }}
                         >
-                            <Sparkles className="w-6 h-6 text-purple-400" />
+                            {/* <Sparkles className="w-6 h-6 text-purple-400" /> */}
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-white">
                                 Adesh
                             </span>

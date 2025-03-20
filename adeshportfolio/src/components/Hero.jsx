@@ -64,7 +64,8 @@ const Hero = () => {
                             className="flex justify-center gap-4"
                         >
                             <a href="#work" className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition-colors flex items-center gap-2">
-                                View My Work <Sparkles className="w-4 h-4" />
+                                View My Work 
+                                {/* <Sparkles className="w-4 h-4" /> */}
                             </a>
                             <a href="#contact" className="px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                                 Contact Me

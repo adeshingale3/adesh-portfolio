@@ -10,6 +10,7 @@ import Hero from './components/Hero';
 import ContactPage from './components/Contact';
 import Skill from './components/Skill';
 import SplashCursor from './blocks/Animations/SplashCursor/SplashCursor';
+import GraphicDesign from './components/GraphicDesign';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Navbar />
         <Hero />
         <Work />
+        <GraphicDesign />
         <Skill />
         <Education />
         <ContactPage />
