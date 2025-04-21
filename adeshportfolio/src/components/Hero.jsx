@@ -70,7 +70,7 @@ const Hero = () => {
                             <a href="#contact" className="px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                                 Contact Me
                             </a>
-                            <a href="https://drive.google.com/file/d/1x7NSXjThI_5rINI3RnVS9YlqHupirYyq/view?usp=sharing" className="px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                            <a href="https://drive.google.com/file/d/1XUFxQm1aBJyLIkEQxWad8fw8VV6p8QRt/view?usp=drive_link" className="px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                                  CV
                             </a>
                         </motion.div>
