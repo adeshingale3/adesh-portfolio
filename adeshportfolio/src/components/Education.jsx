@@ -25,7 +25,7 @@ const Education = () => {
             degree: "Bachelor of Engineering",
             duration: "2021 - 2025",
             description: "Major in Computer Science and Engineering",
-            achievements: ["7.6 CGPA", "Participated in 6+ Hackathons", "Ninjacart Hackathon Finalist"],
+            achievements: ["7.6 CGPA", "Participated in 6+ Hackathons", "Ninjacart Hackathon Finalist", "HackSprint National Level Hackathon Winner", "CSI International Project Award Winner"],
             icon: Mail
         }
     ];
