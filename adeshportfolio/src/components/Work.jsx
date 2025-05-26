@@ -30,6 +30,15 @@ const Work = () => {
             link: "https://github.com/adeshingale3/disaster-management-flutter-application",
             live_link: "#",
             icon: Code
+        },
+        {
+            title: "iCare- Eye Disease Prediction",
+            description: "iCare is an AI-powered eye disease detection platform that helps predict various eye conditions through retinal image analysis and symptom-based diagnosis.",
+            image: "/assets/iCare.png",
+            tags: ["Machine Learning","MongoDB", "Express js", "Node js", "HTML", "CSS", "JS"],
+            link: "https://github.com/adeshingale3/iCare-EyeDiseasePrediction",
+            live_link: "#",
+            icon: Code
         }
     ];
     return (
