@@ -11,6 +11,7 @@ import ContactPage from './components/Contact';
 import Skill from './components/Skill';
 import SplashCursor from './blocks/Animations/SplashCursor/SplashCursor';
 import GraphicDesign from './components/GraphicDesign';
+import GlobalClickSound from './components/ClickSound';
 
 
 
@@ -33,6 +34,7 @@ function App() {
     <>
       {loading && <Loader />}
       <div className="bg-[#0a0a0a] min-h-screen text-white selection:bg-purple-500/30">
+        <GlobalClickSound />
         <SplashCursor/>
         <Navbar />
         <Hero />
