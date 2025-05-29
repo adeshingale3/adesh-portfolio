@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Home, Briefcase, GraduationCap, Mail, Menu, X, Sparkles } from 'lucide-react';
+import { Home, Briefcase, GraduationCap, Mail, Menu, X, Sparkles, Volume2, VolumeX } from 'lucide-react';
 
 const navItems = [
     { icon: Home, label: 'Home', href: '#home' },
@@ -13,14 +13,37 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    const audioRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(true);
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
 
+        const handleUserInteraction = () => {
+            if (!isPlaying && audioRef.current) {
+                audioRef.current.volume = 0.3;
+                audioRef.current.play().catch((err) => console.log("Playback failed:", err));
+                setIsPlaying(false);
+            }else{
+                audioRef.current.volume = 0.0;
+            }
+        };
+
+        document.addEventListener('click', handleUserInteraction, { once: true });
+        document.addEventListener('touchstart', handleUserInteraction, { once: true });
+
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+            document.removeEventListener('click', handleUserInteraction);
+            document.removeEventListener('touchstart', handleUserInteraction);
+        };
+
+
+
+    }, [isPlaying]);
 
     const menuVariants = {
         closed: {
@@ -54,6 +77,7 @@ const Navbar = () => {
 
     return (
         <>
+            <audio ref={audioRef} src="/assets/background.mp3" loop />
             <motion.nav
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
@@ -72,13 +96,23 @@ const Navbar = () => {
                             </span>
                         </motion.div>
 
-                        <motion.button
-                            whileTap={{ scale: 0.95 }}
-                            className="text-gray-300 hover:text-white p-2 z-50"
-                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        >
-                            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                        </motion.button>
+                        <div className='flex gap-10'>
+                            <motion.button
+                                whileTap={{ scale: 0.95 }}
+                                className="text-gray-300 hover:text-white p-2 z-50"
+                                onClick={() => setIsPlaying(!isPlaying)}
+                            >
+                                {isPlaying ? <VolumeX className="w-6 h-6" />  : <Volume2 className="w-6 h-6" />}
+                            </motion.button>
+
+                            <motion.button
+                                whileTap={{ scale: 0.95 }}
+                                className="text-gray-300 hover:text-white p-2 z-50"
+                                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                            >
+                                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                            </motion.button>
+                        </div>
                     </div>
                 </div>
             </motion.nav>
