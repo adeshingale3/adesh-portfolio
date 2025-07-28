@@ -12,6 +12,8 @@ import Skill from './components/Skill';
 import SplashCursor from './blocks/Animations/SplashCursor/SplashCursor';
 import GraphicDesign from './components/GraphicDesign';
 import GlobalClickSound from './components/ClickSound';
+import { Analytics } from "@vercel/analytics/react"
+
 
 
 
