@@ -16,7 +16,7 @@ const AnimatedSphere = () => {
         <Float speed={1.4} rotationIntensity={1} floatIntensity={2}>
             <Sphere ref={sphereRef} args={[1, 100, 200]} scale={2.4}>
                 <MeshDistortMaterial
-                    color="#9333ea"
+                    color="#7B7B7B"
                     attach="material"
                     distort={0.6}
                     speed={1.5}
