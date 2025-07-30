@@ -23,7 +23,7 @@ const Navbar = () => {
 
         const handleUserInteraction = () => {
             if (!isPlaying && audioRef.current) {
-                audioRef.current.volume = 0.3;
+                audioRef.current.volume = 1.0;
                 audioRef.current.play().catch((err) => console.log("Playback failed:", err));
                 setIsPlaying(false);
             }else{
@@ -77,7 +77,7 @@ const Navbar = () => {
 
     return (
         <>
-            <audio ref={audioRef} src="/assets/background.mp3" loop />
+            <audio ref={audioRef} src="/assets/bg-music.mp3" loop />
             <motion.nav
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}

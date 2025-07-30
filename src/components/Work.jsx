@@ -5,6 +5,15 @@ import { motion } from 'framer-motion';
 const Work = () => {
     const projects = [
         {
+            title: "wavyJS",
+            description: "NPM package for React Hooks.",
+            image: "/assets/wavyjs.png",
+            tags: ["TypeScript"],
+            link: "https://github.com/adeshingale3/wavyJS",
+            live_link: "https://www.npmjs.com/package/wavyjs",
+            icon: Brain
+        },
+        {
             title: "EcoPlace",
             description: "EcoPlace is a platform that provides real-time sustainability scores for e-commerce products, empowering consumers and businesses to make eco-friendly decisions.",
             image: "/assets/ecoplace.png",
