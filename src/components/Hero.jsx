@@ -25,12 +25,12 @@ const Hero = () => {
     return (
         <div>
             <section id="home" className="relative h-screen overflow-hidden">
-                <motion.div
+                {/* <motion.div
                     style={{ opacity, scale }}
                     className="absolute inset-0 z-0"
                 >
                     <Scene />
-                </motion.div>
+                </motion.div> */}
                 <div className="relative z-10 flex items-center justify-center h-full px-4">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
