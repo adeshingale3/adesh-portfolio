@@ -1,8 +1,11 @@
 import React from 'react'
 import { Github, Linkedin, Twitter, Mail, ExternalLink, ChevronRight, Sparkles, Rocket, Brain, Code } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const Work = () => {
+    const [showAll, setShowAll] = useState(false);
+
     const projects = [
         {
             title: "wavyJS",
@@ -44,7 +47,7 @@ const Work = () => {
             title: "iCare- Eye Disease Prediction",
             description: "iCare is an AI-powered eye disease detection platform that helps predict various eye conditions through retinal image analysis and symptom-based diagnosis.",
             image: "/assets/iCare.png",
-            tags: ["Machine Learning","MongoDB", "Express js", "Node js", "HTML", "CSS", "JS"],
+            tags: ["Machine Learning", "MongoDB", "Express js", "Node js", "HTML", "CSS", "JS"],
             link: "https://github.com/adeshingale3/iCare-EyeDiseasePrediction",
             live_link: "#",
             icon: Code
@@ -59,6 +62,7 @@ const Work = () => {
             icon: Code
         }
     ];
+    const visibleProjects = showAll ? projects : projects.slice(0, 4);
     return (
         <div>
             {/* Work Section */}
@@ -83,8 +87,8 @@ const Work = () => {
                         </p>
                     </div>
 
-                    <div className="space-y-16 md:space-y-32">
-                        {projects.map((project, index) => (
+                    <div className="space-y-4 md:space-y-8 flex flex-col items-center">
+                        {visibleProjects.map((project, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 20 }}
@@ -135,6 +139,15 @@ const Work = () => {
                                 </div>
                             </motion.div>
                         ))}
+                        {projects.length > 4 && (
+                            <button
+                                onClick={() => setShowAll(!showAll)}
+                                className="text-white px-4 py-2 mt-4 bg-blue-600 rounded-full hover:bg-blue-700 transition"
+                            >
+                                {showAll ? 'Show Less' : 'Show More'}
+                            </button>
+                        )}
+
                     </div>
                 </motion.div>
             </section>
