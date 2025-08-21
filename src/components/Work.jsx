@@ -3,6 +3,7 @@ import { Github, Linkedin, Twitter, Mail, ExternalLink, ChevronRight, Sparkles, 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
+
 const Work = () => {
     const [showAll, setShowAll] = useState(false);
 

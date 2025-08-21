@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, Briefcase, GraduationCap, Mail, Menu, X, Sparkles, Volume2, VolumeX } from 'lucide-react';
-
+import {ReactCardIcon} from 'wavyjs'
 const navItems = [
     { icon: Home, label: 'Home', href: '#home' },
     { icon: Briefcase, label: 'Work', href: '#work' },
@@ -112,6 +112,8 @@ const Navbar = () => {
                             >
                                 {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                             </motion.button>
+                            
+
                         </div>
                     </div>
                 </div>

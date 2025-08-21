@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import Scene from './Scene';
 import { useState, useEffect } from 'react';
 import { useScroll, useTransform } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
+import { ReactCardIcon } from 'wavyjs';
+
 
 
 
@@ -24,7 +25,9 @@ const Hero = () => {
     const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.8]);
     return (
         <div>
+            
             <section id="home" className="relative h-screen overflow-hidden">
+                
                 {/* <motion.div
                     style={{ opacity, scale }}
                     className="absolute inset-0 z-0"
@@ -57,6 +60,7 @@ const Hero = () => {
                         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                             Crafting digital experiences through elegant code and innovative solutions
                         </p>
+                        
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}

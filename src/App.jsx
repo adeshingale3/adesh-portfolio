@@ -13,6 +13,7 @@ import SplashCursor from './blocks/Animations/SplashCursor/SplashCursor';
 import GraphicDesign from './components/GraphicDesign';
 import GlobalClickSound from './components/ClickSound';
 import { Analytics } from "@vercel/analytics/react"
+import { FadingBG, GithubBG } from 'wavyjs';
 
 
 
@@ -35,6 +36,9 @@ function App() {
   return (
     <>
       {loading && <Loader />}
+      
+
+      
       <div className="bg-[#0a0a0a] min-h-screen text-white selection:bg-purple-500/30">
         <GlobalClickSound />
         <SplashCursor/>

@@ -5,15 +5,16 @@ import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiNodedotjs,
 import { SiDart, SiC, SiCplusplus } from 'react-icons/si';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJava } from "@fortawesome/free-brands-svg-icons";
+import {CssCardIcon, FlutterCardIcon, HtmlCardIcon, JavascriptCardIcon, ReactCardIcon, TailwindCardIcon} from 'wavyjs'
 const Skill = () => {
   const skills = {
     frontend: [
-      { name: 'HTML5', icon: <SiHtml5 className="text-[#E34F26]" /> },
-      { name: 'CSS3', icon: <SiCss3 className="text-[#1572B6]" /> },
-      { name: 'JavaScript', icon: <SiJavascript className="text-[#F7DF1E]" /> },
-      { name: 'React', icon: <SiReact className="text-[#61DAFB]" /> },
-      { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#06B6D4]" /> },
-      { name: 'Flutter', icon: <SiFlutter className="text-[#02569B]" />},
+      { name: 'HTML5', icon: <HtmlCardIcon/> },
+      { name: 'CSS3', icon: <CssCardIcon /> },
+      { name: 'JavaScript', icon: <JavascriptCardIcon /> },
+      { name: 'React', icon: <ReactCardIcon/> },
+      { name: 'Tailwind CSS', icon: <TailwindCardIcon /> },
+      { name: 'Flutter', icon: <FlutterCardIcon />},
     ],
     backend: [
       { name: 'Node.js', icon: <SiNodedotjs className="text-[#339933]" /> },
