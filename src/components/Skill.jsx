@@ -5,7 +5,7 @@ import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiNodedotjs,
 import { SiDart, SiC, SiCplusplus } from 'react-icons/si';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJava } from "@fortawesome/free-brands-svg-icons";
-import {CssCardIcon, FlutterCardIcon, HtmlCardIcon, JavascriptCardIcon, ReactCardIcon, TailwindCardIcon} from 'wavyjs'
+import {CssCardIcon, FlutterCardIcon, HtmlCardIcon, JavascriptCardIcon, ReactCardIcon, TailwindCardIcon, PythonCardIcon, JavaCardIcon, DartCardIcon, GithubCardIcon} from 'wavyjs'
 const Skill = () => {
   const skills = {
     frontend: [
@@ -23,16 +23,16 @@ const Skill = () => {
       { name: 'Firebase', icon: <SiFirebase className="text-[#FFCA28]" /> },
     ],
     programmingLanguages: [
-        { name: 'Python', icon: <SiPython className="text-[#3776AB]" /> },
-        { name: 'Java', icon: <FontAwesomeIcon icon={faJava} className="text-[#3776AB]" /> },
-        { name: 'JavaScript', icon: <SiJavascript className="text-[#F7DF1E]" /> },
-        { name: 'Dart', icon: <SiDart className="text-[#0175C2]" /> },
+        { name: 'Python', icon: <PythonCardIcon /> },
+        { name: 'Java', icon: <JavaCardIcon /> },
+        { name: 'JavaScript', icon: <JavascriptCardIcon /> },
+        { name: 'Dart', icon: <DartCardIcon /> },
         { name: 'C', icon: <SiC className="text-[#A8B9CC]" /> },
         { name: 'C++', icon: <SiCplusplus className="text-[#00599C]" /> },
     ],
     versionControl: [
       { name: 'Git', icon: <SiGit className="text-[#F05032]" /> },
-      { name: 'GitHub', icon: <SiGithub className="text-white" /> },
+      { name: 'GitHub', icon: <GithubCardIcon/> },
     ],
     tools: [
       { name: 'Figma', icon: <SiFigma className="text-[#F24E1E]" /> },
