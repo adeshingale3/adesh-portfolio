@@ -9,7 +9,7 @@ const Experience = () => {
 
     ]
     return (
-        <div className='mt-3 ml-3  flex flex-col gap-4 items-center justify-center'>
+        <div className='mt-3 ml-3  flex flex-col gap-4 items-center justify-center hover:scale-104 duration-300'>
             {experiences.map((exp, key) => {
                 return (
                     <div className='mr-3 border-1 border-white/50 rounded-lg h-auto w-full flex flex-col'>
