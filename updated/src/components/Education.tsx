@@ -2,9 +2,9 @@ import React from 'react'
 
 const Education = () => {
     const education = [
-        {name: "Kolhapur Institute of Technology", degree: "B.Tech in Computer Science and Engineering", duration: "2021 - 2025", location: "Kolhapur, India"},
-        {name: "Sambhajirao Mane Jr. College", degree: "12th (HSC)", duration: "2020-2021", location: "Kolhapur, India"},
-        {name: "Rajapur High School", degree: "10th (SSC)", duration: "2018-2019", location: "Rajapur, India"},
+        {name: "Kolhapur Institute of Technology - 7.6 CGPA", degree: "B.Tech in Computer Science and Engineering", duration: "2021 - 2025", location: "Kolhapur, India"},
+        {name: "Sambhajirao Mane Jr. College - 92%", degree: "12th (HSC)", duration: "2020-2021", location: "Kolhapur, India"},
+        {name: "Rajapur High School - 86.60%", degree: "10th (SSC)", duration: "2018-2019", location: "Rajapur, India"},
 
 
     ]
