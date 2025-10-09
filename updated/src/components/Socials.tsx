@@ -8,7 +8,7 @@ const Socials = () => {
             </svg>
         },
         {
-            name: "gmail", link: "mailto:adeshingale600@gmail.co0", svg: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Gmail--Streamline-Simple-Icons" height="20" width="20">
+            name: "gmail", link: "mailto:adeshingale600@gmail.com", svg: <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Gmail--Streamline-Simple-Icons" height="20" width="20">
                 <desc>
                     Gmail Streamline Icon: https://streamlinehq.com
                 </desc>
