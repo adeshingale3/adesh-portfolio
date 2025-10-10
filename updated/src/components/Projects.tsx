@@ -30,10 +30,10 @@ const Projects = () => {
                             </div>
                         </div>
                         <h4 className='italic text-[15px] mx-4 mb-2 text-gray-400'>{prj.description}</h4>
-                        <div className=' mx-4 mb-2 w-full h-auto flex flex-row gap-2'>
+                        <div className=' mx-4 mb-2 w-full h-auto flex flex-row flex-wrap gap-2'>
                             {prj.techstack.map((tech, key) => {
                             return (
-                                <div className='flex flex-row bg-white/20 text-white/60 p-1 rounded-sm text-[12px] px-2 text-semibold'>{tech}</div>
+                                <div className='min-w-auto h-6 flex flex-row bg-white/20 text-white/60 p-1 rounded-sm text-[12px] px-1 text-semibold'>{tech}</div>
                             )
                         })}
                         </div>
