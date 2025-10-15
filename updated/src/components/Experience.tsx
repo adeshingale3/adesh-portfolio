@@ -12,7 +12,7 @@ const Experience = () => {
         <div className='mt-3 ml-3  flex flex-col gap-4 items-center justify-center hover:scale-104 duration-300'>
             {experiences.map((exp, key) => {
                 return (
-                    <div className='mr-3 border-1 border-white/50 rounded-lg h-auto w-full flex flex-col'>
+                    <div key={key} className='mr-3 border-1 border-white/50 rounded-lg h-auto w-full flex flex-col'>
                         <div className='flex flex-row justify-between m-4'>
                             <div className='flex flex-col items-start gap-2'>
                                 <h2 className='font-bold'>{exp.company}</h2>

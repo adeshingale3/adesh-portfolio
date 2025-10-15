@@ -13,7 +13,7 @@ const Projects = () => {
         <div className='mt-3 ml-3  flex flex-col gap-4 items-center justify-center'>
             {projects.map((prj, key) => {
                 return (
-                    <div className='mr-3 border-1 border-white/50 rounded-lg h-auto w-full flex flex-col'>
+                    <div key={key} className='mr-3 border-1 border-white/50 rounded-lg h-auto w-full flex flex-col'>
                         <div className='flex flex-row justify-between mx-4 my-3'>
                             <h2 className='font-semibold'>{prj.name}</h2>
                             <div className='flex flex-row gap-2'>
@@ -33,7 +33,7 @@ const Projects = () => {
                         <div className=' mx-4 mb-2 w-full h-auto flex flex-row flex-wrap gap-2'>
                             {prj.techstack.map((tech, key) => {
                             return (
-                                <div className='min-w-auto h-6 flex flex-row bg-white/20 text-white/60 p-1 rounded-sm text-[12px] px-1 text-semibold'>{tech}</div>
+                                <div key={key} className='min-w-auto h-6 flex flex-row bg-white/20 text-white/60 p-1 rounded-sm text-[12px] px-1 text-semibold'>{tech}</div>
                             )
                         })}
                         </div>

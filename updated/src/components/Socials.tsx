@@ -13,7 +13,7 @@ const Socials = () => {
                     Gmail Streamline Icon: https://streamlinehq.com
                 </desc>
                 <title>Gmail</title>
-                <path d="M24 5.457v13.909c0 0.904 -0.732 1.636 -1.636 1.636h-3.819V11.73L12 16.64l-6.545 -4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0 -2.023 2.309 -3.178 3.927 -1.964L5.455 4.64 12 9.548l6.545 -4.91 1.528 -1.145C21.69 2.28 24 3.434 24 5.457z" fill="#000000" stroke-width="1"></path>
+                <path d="M24 5.457v13.909c0 0.904 -0.732 1.636 -1.636 1.636h-3.819V11.73L12 16.64l-6.545 -4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0 -2.023 2.309 -3.178 3.927 -1.964L5.455 4.64 12 9.548l6.545 -4.91 1.528 -1.145C21.69 2.28 24 3.434 24 5.457z" fill="#000000" strokeWidth="1"></path>
             </svg>
         },
         {
@@ -33,9 +33,9 @@ const Socials = () => {
         <div className='mt-4 ml-3 flex flex-row gap-3'>
             {socials.map((social, key) => {
                 return (
-                    <div className='h-9 w-9 bg-white/90 rounded-sm flex justify-center items-center cursor-pointer'>
+                    <div key={key} className='h-9 w-9 bg-white/90 rounded-sm flex justify-center items-center cursor-pointer'>
 
-                        <a key={key} href={social.link}>
+                        <a  href={social.link}>
                             {social.svg}
                         </a>
                     </div>
