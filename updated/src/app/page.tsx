@@ -11,9 +11,9 @@ const page = () => {
 
   return (
     <div className=' h-screen w-screen flex justify-center bg-black overflow-y-auto scrollbar-hide'>
-      <div className=' w-full sm:w-full md:w-[40%] h-full flex flex-col rounded-lg '>
+      <div className=' w-full sm:w-full md:w-[40%] h-full flex flex-col rounded-lg mt-6'>
         <Profile />
-        <h3 className='ml-3 text-[14px] font-semibold text-white/80'>Jack of all trades, Master of Frontend</h3>
+        <h3 className='ml-3 mt-6 text-[14px] font-semibold text-white/80'>Jack of all trades, Master of Frontend</h3>
         <h3 className='text-wrap ml-3 text-[13px] w-[70%] text-white/70'>Software Engineer from India. I love to develope sexy frontend designs more than my non-existing girlfriend.</h3>
         <div className="w-full h-10 p-4 items-center">
           <Skills />

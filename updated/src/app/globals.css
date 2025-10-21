@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
+/* Import Poppins from Google Fonts (display=swap for better rendering) */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000; /* main background black */
+  --card-bg: #0f1720; /* very dark gray for cards */
+  --foreground: #ffffff; /* main text white */
+  --muted: #9ca3af; /* gray-400-ish for secondary text */
 }
 
-@theme inline {
+/* expose a couple of css variables for components */
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
+  /* keep the same monochrome look even in light mode */
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --card-bg: #f8fafc; /* light card background */
+    --foreground: #0a0a0a;
+    --muted: #6b7280;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility: ensure links in the site follow monochrome palette */
+a {
+  color: var(--foreground);
+  text-decoration: underline;
+}
+
+/* Small scrollbar tweak to keep it subtle (Tailwind plugin 'scrollbar-hide' used, keep fallback) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-bg);
+  border-radius: 9999px;
 }
