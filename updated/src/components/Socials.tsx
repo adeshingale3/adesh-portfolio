@@ -24,15 +24,14 @@ const Socials = () => {
         )},
     ]
     return (
-        <div className='mt-4 ml-0 flex flex-row gap-3'>
+        <div className='mt-6 ml-0 flex flex-row gap-4'>
             {socials.map((social, key) => {
                 return (
-                    <a key={key} href={social.link} className='h-9 w-9 flex justify-center items-center rounded-sm cursor-pointer' style={{color: 'var(--foreground)'}} aria-label={social.name}>
+                    <a key={key} href={social.link} className='h-10 w-10 flex justify-center items-center rounded-lg cursor-pointer border border-[var(--card-border)] hover:border-[var(--accent)] transition-all duration-300 hover:shadow-lg hover:scale-105' style={{color: 'var(--foreground)', background: 'var(--card-bg)'}} aria-label={social.name}>
                         {social.svg}
                     </a>
                 )
             })}
-
         </div>
     )
 }

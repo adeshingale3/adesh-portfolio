@@ -50,11 +50,11 @@ const Skills = () => {
         {[...icons, ...icons].map((icon, i) => (
           <div
             key={i}
-            className={`flex items-center justify-center gap-2 px-3 py-1 rounded-md text-[var(--foreground)] font-medium min-w-[120px]`}
-            style={{background: 'rgba(255,255,255,0.02)'}}
+            className={`flex items-center justify-center gap-3 px-4 py-2 rounded-lg text-[var(--foreground)] font-medium min-w-[130px] border border-[var(--card-border)] hover:border-[var(--accent)] transition-all duration-300 hover:shadow-lg`}
+            style={{background: 'var(--card-bg)'}}
           >
             <span style={{color: 'var(--foreground)'}}>{icon.icons}</span>
-            <h3 className="text-[12px] text-[var(--muted)]">{icon.name}</h3>
+            <h3 className="text-[13px] text-[var(--muted)] font-medium">{icon.name}</h3>
           </div>
         ))}
       </div>
@@ -68,7 +68,7 @@ const Skills = () => {
           }
 
           .animate-scroll {
-            animation: scroll 20s linear infinite;
+            animation: scroll 25s linear infinite;
           }
         `}
       </style>
