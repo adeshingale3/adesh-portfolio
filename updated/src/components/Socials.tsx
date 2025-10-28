@@ -23,6 +23,7 @@ const Socials = () => {
             </svg>
         )},
     ]
+    const resumeLink = 'https://drive.google.com/file/d/1ZxxeNo9N_53KncayaURdJyc3qnGFnmxc/view?usp=sharing';
     return (
         <div className='mt-6 ml-0 flex flex-row gap-4'>
             {socials.map((social, key) => {
@@ -32,6 +33,9 @@ const Socials = () => {
                     </a>
                 )
             })}
+            <a href={resumeLink} target="_blank" rel="noopener noreferrer" className='h-10 px-4 flex justify-center items-center rounded-lg cursor-pointer border border-[var(--card-border)] hover:border-[var(--accent)] transition-all duration-300 hover:shadow-lg hover:scale-105 text-[13px] font-medium' style={{color: 'var(--foreground)', background: 'var(--card-bg)'}} aria-label='resume'>
+                Resume
+            </a>
         </div>
     )
 }
