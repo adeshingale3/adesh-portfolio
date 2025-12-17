@@ -24,7 +24,7 @@ export default function About() {
       {/* About me */}
       <div className=" flex flex-col gap-4 md:flex-col">
         <Image
-          src="/pfp.jpg"
+          src="/Profile.png"
           alt="About"
           width={100}
           height={100}

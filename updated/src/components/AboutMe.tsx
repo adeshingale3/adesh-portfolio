@@ -12,7 +12,7 @@ export default function About() {
       {/* About me */}
       <div className="mt-8 flex flex-col gap-4 md:flex-row">
         <Image
-          src="/pfp.jpg"
+          src="/Profile.png"
           alt="About"
           width={100}
           height={100}
