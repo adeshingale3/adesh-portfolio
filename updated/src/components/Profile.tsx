@@ -28,7 +28,7 @@ export default function About() {
           alt="About"
           width={100}
           height={100}
-          className="border-secondary size-40 rounded-full border-2 bg-blue-300 dark:bg-yellow-300"
+          className="object-cover border-secondary size-40 rounded-full border-2 bg-blue-300 dark:bg-yellow-300"
         />
         <div className="mt-4">
           <h3 className="text-3xl font-bold">Hi, I'm Adesh -- <span className='text-gray-500'>A Full Stack Web Developer</span></h3>
