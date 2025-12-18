@@ -13,6 +13,7 @@ const page = () => {
 
   return (
     <Container className="min-h-screen py-10">
+      
       <Navbar />
       <Profile />
       <Experience />

@@ -14,16 +14,16 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "project-1",
-    title: "E-Commerce Platform",
-    timeframe: "Jan 2024 - Mar 2024",
-    logo: "/ecommerce-store-logo.png",
+    title: "WAVY JS",
+    timeframe: "Aug 2025 - Sep 2025",
+    logo: "/wavy logo.png",
     description:
       "A full-stack e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
     fullDescription:
       "A comprehensive e-commerce platform built with Next.js that features real-time inventory management, integrated payment processing using Stripe, user authentication with Supabase, and a powerful admin dashboard for managing products, orders, and customer analytics. The platform includes advanced search functionality, product filtering, and personalized recommendations.",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/adeshingale3/wavyJS",
     liveLink: "https://example.com",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Stripe", "React"],
+    techStack: ["React.js", "TypeScript", "Tailwind CSS"],
     expanded: true,
   },
   {
